@@ -30,7 +30,7 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).fla
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class="tags">
+  <div>
     <div class="tags">
       {
         uniqueTags.map((tag) => (
