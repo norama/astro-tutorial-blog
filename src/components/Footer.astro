@@ -1,17 +1,23 @@
 ---
-const platform = 'github'
-const username = 'withastro'
+import Social from './Social.astro'
 const linkedin = 'LinkedIn'
 const norama = 'nora-mate'
 ---
 
+<style>
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
 <footer>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
   <p>
-    Learn more about Astro projects on <a href={`https://www.${platform}.com/${username}`}
-      >{platform}</a
-    >!
-  </p>
-  <p>
-    My <a href={`https://www.${linkedin}.com/in/${norama}`}>{linkedin}</a>
+    <a href={`https://www.${linkedin}.com/in/${norama}`}>{linkedin}</a>
   </p>
 </footer>
