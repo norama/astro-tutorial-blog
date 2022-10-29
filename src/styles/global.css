@@ -19,3 +19,43 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+
+/* nav styles */
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+a:focus {
+  background-color: #ff9776;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (max-width: 636px) {
+  .nav-links {
+    margin-left: 1em;
+    position: static;
+    display: block;
+    width: auto;
+    background: none;
+  }
+}
