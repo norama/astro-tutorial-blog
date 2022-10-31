@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@astrojs/netlify': ^1.2.0
   '@astrojs/preact': ^1.2.0
   '@astrojs/rss': ^1.0.3
   astro: ^1.6.0
@@ -9,6 +10,7 @@ specifiers:
   prettier-plugin-astro: ^0.7.0
 
 dependencies:
+  '@astrojs/netlify': 1.2.0
   '@astrojs/preact': 1.2.0_preact@10.11.2
   '@astrojs/rss': 1.0.3
   astro: 1.6.1
@@ -101,6 +103,13 @@ packages:
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-message: 3.1.2
+    dev: false
+
+  /@astrojs/netlify/1.2.0:
+    resolution: {integrity: sha512-nFWdgR5OVUCdYt/d3U3XBYPEMukGwxzRKH4D20lk8SjQsKTtvhJpRIJWrhlGJApidjms1WJXa8xh6A8BQYRmmA==}
+    dependencies:
+      '@astrojs/webapi': 1.1.0
+      esbuild: 0.14.54
     dev: false
 
   /@astrojs/preact/1.2.0_preact@10.11.2:
